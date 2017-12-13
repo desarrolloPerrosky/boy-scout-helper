@@ -24,14 +24,18 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     Use the tkDrawerContent directive to display the content of the app drawer on this page.
     -->
     <StackLayout tkDrawerContent>
-        <MyDrawer [selectedPage]="'Home'"></MyDrawer>
+        <MyDrawer [selectedPage]="'Codigo Morse'"></MyDrawer>
     </StackLayout>
     
     <!--
     Use the tkMainContent directive to display the content of the page when you have an app drawer.
     -->
-    <GridLayout class="page page-content" tkMainContent>
-        <Label class="page-icon fa" text="&#xf015;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+    <StackLayout class="page page-content" tkMainContent orientation="vertical" width="100%"
+         style.backgroundColor="lightgray">
+        <Label [text]="bienvenida" height="400" ></Label>
+        <Label text="Label 2" height="50" backgroundColor="green" ></Label>
+        <Label text="Label 3" height="50" backgroundColor="blue" ></Label>
+        <Label text="Label 4" height="50" backgroundColor="yellow" ></Label>
+    </StackLayout>
+
 </RadSideDrawer>
