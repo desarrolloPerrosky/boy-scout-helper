@@ -30,8 +30,20 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     <!--
     Use the tkMainContent directive to display the content of the page when you have an app drawer.
     -->
-    <GridLayout class="page page-content" tkMainContent>
-        <Label class="page-icon fa" text="&#xf002;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+    <GridLayout columns="50, *, auto" rows="80, 80, 80, *" class="page page-content" tkMainContent >
+        <Button col="0" ></Button>
+        <Button col="1" ></Button>
+        <Button col="2" ></Button>
+
+        <Button col="0" row="1"></Button>
+        <Button col="1" row="1"></Button>
+        <Button col="2" row="1"></Button>
+
+        <Button col="0" row="2"></Button>
+        <Button col="1" row="2"></Button>
+        <Button col="2" row="2"></Button>
+
+        <!-- by default column and row are set to 0 -->
+        <Button row="3" colSpan="3" ></Button>
     </GridLayout>
 </RadSideDrawer>

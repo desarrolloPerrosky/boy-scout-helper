@@ -32,10 +32,13 @@ it shouldn't have any other siblings other than the <ActionBar> component.
     -->
     <StackLayout class="page page-content" tkMainContent orientation="vertical" width="100%"
          style.backgroundColor="lightgray">
-        <Label [text]="bienvenida" height="400" ></Label>
-        <Label text="Label 2" height="50" backgroundColor="green" ></Label>
-        <Label text="Label 3" height="50" backgroundColor="blue" ></Label>
-        <Label text="Label 4" height="50" backgroundColor="yellow" ></Label>
+        <Label [text]="bienvenida" textWrap="true" ></Label>
+        <Label text="    " height="10" width="100%"></Label>
+        <Label [text]="creacion" textWrap="true"></Label>
+        <Label text="    " height="10" width="100%"></Label>
+        <Label [text]="autor" textWrap="true"></Label>
+        <Label text="    " height="10"  width="100%"></Label>
+        <Label [text]="autor2" textWrap="true"></Label>
     </StackLayout>
-
+    
 </RadSideDrawer>
